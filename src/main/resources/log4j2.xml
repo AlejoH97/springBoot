@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="Info">
+
+    <appender name="Appender2" class="org.apache.log4j.FileAppender">
+        <param name="File" value="D:/SpringMVC2.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-7p %d [%t] %c %x - %m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="INFO"/>
+        <appender-ref ref="Appender1" />
+        <appender-ref ref="Appender2" />
+    </root>
+
+</Configuration>
